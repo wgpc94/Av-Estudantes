@@ -29,10 +29,8 @@ public class AvEstudantes {
 			System.out.println("Digete o valor correto :");
 			
 		}
-		double notaF = aL.CalcularNota();
-		System.out.println(aL.situacao+" Sua Nota Final e: "+notaF);
-	
 		
+		System.out.println(aL.toString());
 		
 		entrada.close();
 	}

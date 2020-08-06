@@ -1,7 +1,7 @@
 package entidades;
 
 public class Estudantes {
-	public String nome ="null";
+	public String nome;
 	public double av1;
 	public double av2;
 	public double av3;
@@ -14,6 +14,10 @@ public class Estudantes {
 			situacao = "REPROVADO";
 		}
 		return notaFinal;
+		
+	}
+	public String toString() {
+		return  String.format( "\n"+nome + "\nNota Final: %.2f",CalcularNota())+ "\nSituação: "+ situacao ;
 	}
 
 }
